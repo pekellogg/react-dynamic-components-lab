@@ -1,14 +1,14 @@
 import 'jsdom-global/register';
-import { expect } from 'chai'
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Enzyme, { shallow, mount } from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
+import { expect } from 'chai';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Enzyme, { shallow, mount } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 
-import App from '../src/App.js'
-import BlogPost from '../src/BlogPost.js'
-import Comment from '../src/Comment.js'
-import ColorBox from '../src/ColorBox.js'
+import App from '../src/App.js';
+import BlogPost from '../src/BlogPost.js';
+import Comment from '../src/Comment.js';
+import ColorBox from '../src/ColorBox.js';
 
 Enzyme.configure({ adapter: new Adapter() })
 

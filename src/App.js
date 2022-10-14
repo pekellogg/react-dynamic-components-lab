@@ -1,23 +1,19 @@
-import React, { Component } from 'react';
-import BlogPost from './BlogPost.js'
-import ColorBox from './ColorBox.js'
+import React, { Component } from "react";
+import BlogPost from "./BlogPost.js"
+import ColorBox from "./ColorBox.js"
 
-class App extends Component {
-  
-  // Nothing needs to change here! 
-  // Make note of what prop we are initially passing to `ColorBox` below!
+export default class App extends Component {
   
   render() {
     return (
       <div id="app">
           <BlogPost />
-          <div id="seperator"></div>
+          <div id="separator"></div>
           <div className="wrapper">
-            <ColorBox opacity={1} />
+            <ColorBox opacity={1} /> {/* render a ColorBox with 1 opacity, then opacity conditional eval-- T: decrement by .1*/}
           </div>
       </div>
-    )
-  }
-}
+    );
+  };
 
-export default App;
+};
